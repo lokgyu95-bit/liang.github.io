@@ -61,21 +61,23 @@
 <body class="bg-white dark:bg-ink text-slate-800 dark:text-slate-200 antialiased">
 
 <!-- Mobile top bar -->
-<header class="lg:hidden sticky top-0 z-40 flex items-center justify-between px-4 h-14 bg-white/90 dark:bg-ink/90 backdrop-blur border-b border-slate-200 dark:border-slate-800">
-  <button id="menu-toggle" aria-label="메뉴 열기" data-i18n-aria="k_menu_open" class="p-2 -ml-2 text-slate-700 dark:text-slate-200">
-    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
-  </button>
-  <span class="font-display font-bold text-lg text-brand-600 dark:text-brand-300">HOPEGOO</span>
-  <div class="flex items-center gap-1.5">
+<header class="lg:hidden sticky top-0 z-40 bg-white/90 dark:bg-ink/90 backdrop-blur border-b border-slate-200 dark:border-slate-800">
+  <div class="flex items-center justify-between px-4 h-14">
+    <button id="menu-toggle" aria-label="메뉴 열기" data-i18n-aria="k_menu_open" class="p-2 -ml-2 text-slate-700 dark:text-slate-200">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+    </button>
+    <span class="font-display font-bold text-lg text-brand-600 dark:text-brand-300">HOPEGOO</span>
+    <button id="theme-toggle-mobile" aria-label="다크모드 전환" data-i18n-aria="k_theme" class="p-2 -mr-2 text-slate-700 dark:text-slate-200">
+      <svg id="icon-moon-m" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+      <svg id="icon-sun-m" class="hidden" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg>
+    </button>
+  </div>
+  <div class="flex items-center justify-center pb-2">
     <div class="lang-switch flex items-center rounded-full bg-slate-100 dark:bg-slate-800 p-0.5 text-[11px] font-bold">
-      <button data-lang="ko" class="lang-btn px-2 py-1 rounded-full text-slate-500 dark:text-slate-400">KO</button>
-      <button data-lang="cn" class="lang-btn px-2 py-1 rounded-full text-slate-500 dark:text-slate-400">CN</button>
-      <button data-lang="hk" class="lang-btn px-2 py-1 rounded-full text-slate-500 dark:text-slate-400">HK</button>
+      <button data-lang="ko" class="lang-btn px-3 py-1 rounded-full text-slate-500 dark:text-slate-400">KO</button>
+      <button data-lang="cn" class="lang-btn px-3 py-1 rounded-full text-slate-500 dark:text-slate-400">CN</button>
+      <button data-lang="hk" class="lang-btn px-3 py-1 rounded-full text-slate-500 dark:text-slate-400">HK</button>
     </div>
-    <button id="theme-toggle-mobile" aria-label="다크모드 전환" data-i18n-aria="k_theme" class="p-2 -mr-1 text-slate-700 dark:text-slate-200">
-    <svg id="icon-moon-m" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
-    <svg id="icon-sun-m" class="hidden" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg>
-  </button>
   </div>
 </header>
 
